@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="build/img/nicolaitaFAVICON.png">
+    <link rel="stylesheet" href="build/css/app.min.css">
+    <title>Clon nicolaita.com</title>
+</head>
+<body>
+
+    <div class="nav-flotante">
+        <div class="navegacion navbar navbar-expand-md">
+            <a href="index.html" class="navbar-brand fs-2 text-decoration-none text-white fw-dark d-inline-block py-1">nicolaita.com</a>
+            
+            <button type="button" class="fs-small navbar-toggler text-white text-uppercase border-2 border-white border-rad-med d-flex d-md-none align-items-center" data-bs-toggle="collapse" data-bs-target="#unum" aria-expanded="false" aria-controls="unum">Menu <i class="bi bi-list fs-medium"></i> </button>
+            
+            
+            <nav class="collapse navbar-collapse" id="unum">
+                <ul class="navbar-nav ms-md-auto text-uppercase list-unstyled text-start">
+                    <li class="nav-item">
+                        <a href="#servicios" class="nav-link fw-bold py-1 px-3 border-rad" data-bs-toggle="collapse" data-bs-target="#unum" >Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#nosotros" class="nav-link fw-bold py-1 px-3 border-rad" data-bs-toggle="collapse" data-bs-target="#unum">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info" class="nav-link fw-bold py-1 px-3 border-rad" data-bs-toggle="collapse" data-bs-target="#unum">Información</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <header class="header p-1">
+
+        <div class="container-xl">
+            <div class="contenedor-superiorVid">
+                
+                <div class="hero w-100 d-flex flex-column justify-content-center align-items-center p-3">
+
+                    <img src="build/img/logoNicolaita.png" alt="logo nicolaita" class="logo mb-1">
+
+                    <div class="separador">
+                        <div class="separador-linea"></div>
+                        <div class="separador-icono fs-3 px-3 pb-1">
+                            <i class="bi bi-star-fill"></i>
+                        </div> <!--pb-1 para hacer que se vea mejor colocada la estrella-->
+                        <div class="separador-linea"></div>
+
+                    </div>
+
+                    <p class="text-white texto-hero text-center">Reinventando la experiencia educativa: Hub de Inovación Ecosistémica</p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="build/vendors/video/blackMinified.mp4">
+            </video>
+        </div>
+
+
+    </header>
+
+    <main class="contenido-principal" id="servicios">
+        <div class="container-xl py-5">
+            <h2 class="text-dark text-center text-uppercase mb-0 fw-dark fs-1 letter-spacing-heading">Servicios</h2>
+            
+            <div class="separador">
+                <div class="separador-linea"></div>
+                <div class="separador-icono fs-3 px-3 pb-1">
+                    <i class="bi bi-folder-fill"></i>
+                </div>
+                <div class="separador-linea"></div>
+            </div>
+
+            <div class="row justify-content-center align-items-center p-2">
+
+                <div class="servicio col-sm-6 col-lg-2 py-1 px-2 mb-3 mb-md-2">
+                    
+                    <a href="#" class="modal-link" id="vinculacion" data-bs-toggle="modal" data-bs-target="#modal-servicios">
+
+                        <div class="modal-custom p-2">
+                            <div class="icono-color">
+                                <div class="icono-modal">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+    
+                            <img src="build/img/logoVinculacion.png" alt="logo vinculacion" class="img-fluid border-rad">
+                        </div>
+
+                    </a>
+
+                </div> <!--elemento modal-->
+
+                <div class="servicio col-sm-6 col-lg-2 py-1 px-2 mb-3 mb-md-2">
+
+                    <a href="#" class="modal-link" id="startup" data-bs-toggle="modal" data-bs-target="#modal-servicios">
+
+                        <div class="modal-custom p-2">
+                            <div class="icono-color">
+                                <div class="icono-modal">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+    
+                            <img src="build/img/logoStartupNicolaita.png" alt="logo startup" class="img-fluid border-rad">
+                        </div>
+
+                    </a>
+
+
+                </div> <!--elemento modal-->
+
+                <div class="servicio col-sm-6 col-lg-2 py-1 px-2 mb-3 mb-md-2">
+
+                    <a href="#" class="modal-link" id="oan" data-bs-toggle="modal" data-bs-target="#modal-servicios">
+                        
+                        <div class="modal-custom p-2">
+                            <div class="icono-color">
+                                <div class="icono-modal">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+    
+                            <img src="build/img/logoOAN.png" alt="logo oferta academica" class="img-fluid border-rad">
+                        </div>
+
+                    </a>
+
+                </div> <!--elemento modal-->
+
+                <div class="servicio col-sm-6 col-lg-2 py-1 px-2 mb-3 mb-md-2">
+
+                    <a href="#" class="modal-link" id="endd" data-bs-toggle="modal" data-bs-target="#modal-servicios">
+
+                        <div class="modal-custom p-2">
+                            <div class="icono-color">
+                                <div class="icono-modal">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+    
+                            <img src="build/img/logoENDD.png" alt="logo escuela de docencia" class="img-fluid border-rad">
+                        </div>
+
+                    </a>
+
+                </div> <!--elemento modal-->
+
+                <div class="servicio col-sm-6 col-lg-2 py-1 px-2 mb-3 mb-md-2">
+
+                    <a href="#" class="modal-link" id="a1-block" data-bs-toggle="modal" data-bs-target="#modal-servicios">
+
+                        <div class="modal-custom p-2">
+                            <div class="icono-color">
+                                <div class="icono-modal">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+    
+                            <img src="build/img/logoa1BlockChain.jpg" alt="logo a1-blockchain" class="img-fluid border-rad">
+                        </div>
+
+                    </a>
+
+                </div> <!--elemento modal-->
+
+                <div class="servicio col-sm-6 col-lg-2 py-1 px-2 mb-3 mb-md-2">
+
+                    <a href="#" class="modal-link" id="distrito" data-bs-toggle="modal" data-bs-target="#modal-servicios">
+
+                        <div class="modal-custom p-2">
+                            <div class="icono-color">
+                                <div class="icono-modal">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+    
+                            <img src="build/img/logoDistritoUMICH.png" alt="logo distrito umich" class="img-fluid border-rad">
+                        </div>
+
+                    </a>
+
+                </div> <!--elemento modal-->
+
+                <div class="servicio col-sm-6 col-lg-2 py-1 px-2 mb-3 mb-md-2">
+
+                    <a href="#" class="modal-link" id="fondeo" data-bs-toggle="modal" data-bs-target="#modal-servicios">
+
+                        <div class="modal-custom p-2">
+                            <div class="icono-color">
+                                <div class="icono-modal">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+    
+                            <img src="build/img/logoFondeo.png" alt="logo fondeo colectivo" class="img-fluid border-rad">
+                        </div>
+
+                    </a>
+
+                </div> <!--elemento modal-->
+
+                <div class="servicio col-sm-6 col-lg-2 py-1 px-2 mb-3 mb-md-2">
+
+                    <a href="#" class="modal-link" id="innova" data-bs-toggle="modal" data-bs-target="#modal-servicios">
+
+                        <div class="modal-custom p-2">
+                            <div class="icono-color">
+                                <div class="icono-modal">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+    
+                            <img src="build/img/logoInnovaTech.png" alt="logo innovatech" class="img-fluid border-rad">
+                        </div>
+
+                    </a>
+
+                </div> <!--elemento modal-->
+
+                <div class="servicio col-sm-6 col-lg-2 py-1 px-2 mb-3 mb-md-2">
+
+                    <a href="#" class="modal-link" id="a1-beca" data-bs-toggle="modal" data-bs-target="#modal-servicios">
+
+                        <div class="modal-custom p-2">
+                            <div class="icono-color">
+                                <div class="icono-modal">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+    
+                            <img src="build/img/logoA1beca.png" alt="logo a1-beca" class="img-fluid border-rad">
+                        </div>
+
+                    </a>
+
+                </div> <!--elemento modal-->
+
+                <div class="servicio col-sm-6 col-lg-2 py-1 px-2 mb-3 mb-md-2">
+
+                    <a href="#" class="modal-link" id="csoftn" data-bs-toggle="modal" data-bs-target="#modal-servicios">
+
+                        <div class="modal-custom p-2">
+                            <div class="icono-color">
+                                <div class="icono-modal">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+    
+                            <img src="build/img/logoCsoftN.png" alt="logo csoftn" class="img-fluid border-rad">
+                        </div>
+
+                    </a>
+
+                </div> <!--elemento modal-->
+
+                <div class="servicio col-sm-6 col-lg-2 py-1 px-2 mb-3 mb-md-2">
+
+                    <a href="#" class="modal-link" id="mentoria" data-bs-toggle="modal" data-bs-target="#modal-servicios">
+
+                        <div class="modal-custom p-2">
+                            <div class="icono-color">
+                                <div class="icono-modal">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+    
+                            <img src="build/img/logoMentoria.png" alt="logo mentoria y desarrollo de talento" class="img-fluid border-rad">
+                        </div>
+
+                    </a>
+
+                </div> <!--elemento modal-->
+
+            </div>
+
+        </div>
+    </main>
+    
+
+    <section id="nosotros" class="nosotros py-5 bg-primary">
+
+        
+        <div class="container-xl py-5">
+            
+            <h2 class="text-white text-center text-uppercase mb-0 fw-dark fs-1 letter-spacing-heading">Sobre nosotros</h2>
+    
+            <div class="separador">
+                <div class="separador-linea"></div>
+                <div class="separador-icono fs-3 px-3 pb-1">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="separador-linea"></div>
+            </div>
+
+            <div class="row mt-2 p-1 justify-content-center">
+                
+                <div class="col-md-4 px-2 mb-1 mb-md-0">
+                    <p class="text-white text-justify">
+                        nicolaita.com es un spinoff emanado de la Universidad Michoacana de San Nicolás de Hidalgo, integrado y dirigido por académicos destacados y estudiantes ejemplares, unidos en un Hub de Innovación.
+                    </p>
+                </div>
+
+                <div class="col-md-4 px-2 ms-0 ms-md-2">
+                    <p class="text-white text-justify">
+                        No pierdas la oportunidad de formar parte de una inmensa red de profesionales y estudiantes que aprovechan los recursos tecnológicos.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="leer-mas text-center mt-3">
+                <a href="#" class="boton btn btn-outline-light border-rad-med border-2 px-3 py-2">Leer más</a> <!--Todos los elementos anchor son texto-->
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="info" class="info">
+        
+        <div class="container-xl py-5">
+
+            <h2 class="text-dark text-center text-uppercase mb-0 fw-dark fs-1 letter-spacing-heading">Más información</h2>
+
+            <div class="separador">
+                <div class="separador-linea"></div>
+                <div class="separador-icono fs-3 px-3 pb-1">
+                    <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="separador-linea"></div>
+            </div>
+
+
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-8">
+                    
+                    <form class="form-info needs-validation" novalidate>
+                        <fieldset class="campo">
+
+                            <div class="input p-1">
+
+                                
+                                <input 
+                                type="email"
+                                name="correo"
+                                id="correo"
+                                placeholder="Correo electrónico"
+                                class="form-control input-correo"
+                                required="required"
+                                data-validation-required-message=""
+                                >
+                                <label for="correo" class="input-label">Correo electrónico</label>
+                                
+                                <div class="input-underline"></div>
+                                
+                                <span class="invalid-feedback">Ingresa un email válido</span> <!--Mensaje que será mostrado al no cumplirse la validación, mismo que se mostrará donde sea ubicado, se relacionará con el elemento que requiera validación más cercano, siempre y cuando estén dentro del mismo contenedor superior próximo-->
+
+                                
+                                
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-light border-2 border-rad-med boton-enviar mt-4">Enviar</button>
+
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    
+    </section>
+
+
+    <footer class="footer py-5">
+
+        <div class="container-xl">
+            <div class="row">
+
+                <div class="col-lg-4 text-center px-3 mb-4 mb-lg-0">
+                    <h4 class="text-uppercase fw-bold fs-5 mb-2">Contacto</h4>
+
+                    <p class="footer-contacto">
+                        <i class="bi bi-envelope-fill"></i> contacto@nicolaita.com
+                    </p>
+                    <p class="footer-contacto">
+                        <i class="bi bi-phone"></i> +52(1) 443 277 6780
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-center px-3 mb-4 mb-lg-0">
+
+                    <h4 class="text-uppercase fw-bold fs-5 mb-2">Síguenos</h4>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="footer-icono me-3">
+                            <a href="#" class="btn btn-outline-light border-2 fs-5 d-inline-flex align-items-center justify-content-center">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </div> <!--footer col-->
+    
+                        <div class="footer-icono">
+                            <a href="#" class="btn btn-outline-light border-2 fs-5 d-inline-flex align-items-center justify-content-center">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!--footer col-->
+
+                <div class="col-lg-4 text-center px-3 mb-4 mb-lg-0">
+
+                    <h4 class="text-uppercase fw-bold fs-5 mb-2">Aviso de privacidad</h4>
+
+                    <div class="">
+
+                        <a href="#" class="footer-link" target="_blank">Aviso</a>
+
+                        <p class="mt-3 mb-2">UMSNH Cuna de héroes, crisol de pensadores</p>
+
+                        <a href="https://www.umich.mx" class="footer-link" target="_blank">Sitio Oficial</a>
+
+                    </div>
+
+
+                </div> <!--footer col-->
+
+            </div>
+        </div>
+
+    </footer>
+
+    <section class="copy-right py-3 text-white text-center">
+        <p class="texto-copy mb-0">Todos los derechos reserbados nicolaita.com&reg; 2019</p>
+    </section>
+
+
+    <div class="up-button">
+        <div class="up-icon">
+            <i class="bi bi-chevron-up"></i>
+        </div>
+    </div> <!--botón scroll up-->
+
+    
+    <div class="modal-custom">
+        <div class="modal fade" id="modal-servicios">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content text-dark">
+                    <div class="modal-header border-0">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer justify-content-center border-0">
+                        <a href="#" class="btn btn-secondary text-white border-rad-med px-3 py-2" target="_blank">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Elemento para hacer que clases usadas en javascript no sean purgadas y puedan ser agregadas en el archivo app.min.css si son necesarias (cuando lo sean)-->
+    <span class="col-10 imagen-modal bloque distSuperior bg-change up-btnToggle show was-validated collapsed collapsing titulo d-none" aria-expanded="true"></span>
+
+
+    <script src="build/vendors/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="build/js/validacionBS.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" type="text/javascript"></script> <!--GSAP GreenSock-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script> <!--ScrollTrigger GreenSock-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> <!--Smooth Scrolling-->
+    <script src="build/js/app.js" type="text/javascript"></script>
+    <script src="build/js/animGsap.js" tpe="text/javascript"></script>
+    <!-- <script src="build/js/pruebas.js" type="text/javascript"></script> -->
+</body>
+</html>
