@@ -109,11 +109,11 @@ window.addEventListener('scroll', e => {
 
 
 //Iniciar en 0,0
-window.addEventListener('DOMContentLoaded', () => {
+window.onload = () => {
 
     window.scroll( 0,0 );
 
-} );
+};
 
 //Evento show up button
 window.addEventListener( 'scroll', showButton );
