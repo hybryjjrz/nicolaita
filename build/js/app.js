@@ -108,7 +108,7 @@ window.addEventListener('scroll', e => {
 });
 
 
-//Iniciar en 0,0, corrigiendo bug que hacía que en la carga la página iniciara en la sección de servicios
+//Iniciar en 0,0, corrigiendo bug que hacía que en la carga la página iniciara en la sección de servicios NO NECESARIO, EL ERROR VENÍA DE LA URL, FUE ENVIADA CON '/#servicios" al final...
 window.onload = () => {
 
     window.scroll( 0,0 );
@@ -127,7 +127,7 @@ btnUp.addEventListener( 'click', moveUp );
 //Adding Smooth Scroll to all nav links
 const scroll = new SmoothScroll('.navbar-nav a[href*="#"]', {
     easing: 'linear',
-    speed: 125
+    speed: 200
 });
 
 //Eventos smooth scroll menu principal, NO SIRVE PARA SAFARI
