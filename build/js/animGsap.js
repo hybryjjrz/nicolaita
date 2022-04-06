@@ -12,6 +12,14 @@ const titulo = document.querySelector( '.hero .texto-hero' );
 const servicios = document.querySelectorAll( '.contenido-principal .servicio' );
 //contenido principal, trigger para servicios
 const principal = document.querySelector( '.contenido-principal' );
+//formulario
+const form = document.querySelector( '.form-info' );
+//boton enviar
+const enviar = document.querySelector( '.boton-enviar' );
+//input
+const entrada = document.querySelector( '.input-correo' );
+
+
 
 
 // gsap.from( navBar, {
@@ -54,3 +62,48 @@ gsap.from( servicios, {
         // toggleActions: "play pause reverse reset"
     }
 } );
+
+//efecto boton enviar
+enviar.addEventListener( 'click', () => {
+    
+    setTimeout( () => { //to make the verification 1 millisecond after we clicked, so the bootstrap validation classes have been added to the form when we verify wether or not to move the form in a negative manner
+
+
+        let validated = form.classList.contains( 'was-validated' ) ;
+        let backgroundNot = window.getComputedStyle( entrada ).background;
+        let background = backgroundNot.slice( 0, 104 ); //getting the first 103 characters of the element to match
+
+        let warningSVG = `rgb(255, 255, 255) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'`;
+
+        // // debugger;
+
+        if( validated && background === warningSVG ) {
+
+            animationVibrate();
+
+        }
+
+    } , 1);
+   
+    
+} );
+
+
+function animationVibrate(){ //animación, hacer que elemento se mueve de izquierda a derecha en una sucesión (una animación tras otra) cuando el campo no se llene correctamente
+
+    gsap.to( form, {
+
+        keyframes: [
+
+            { x: -7, duration: 0.2 },
+            { x: 7, duration: 0.2 },
+            { x: -7, duration: 0.2 },
+            { x: 7, duration: 0.2 },
+            { x: 0, duration: 0.2 }
+
+
+        ]
+
+    } );
+
+}

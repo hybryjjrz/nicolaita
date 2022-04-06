@@ -108,7 +108,7 @@ window.addEventListener('scroll', e => {
 });
 
 
-//Iniciar en 0,0
+//Iniciar en 0,0, corrigiendo bug que hacía que en la carga la página iniciara en la sección de servicios
 window.onload = () => {
 
     window.scroll( 0,0 );
